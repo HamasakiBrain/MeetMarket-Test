@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.table {
+    @apply min-w-full divide-y divide-gray-300;
+}
+.table-th {
+    @apply whitespace-nowrap px-2 py-3.5 text-left text-sm font-semibold text-gray-900;
+}
+.table-th-first {
+    @apply whitespace-nowrap py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6;
+}
+.table-th-edit {
+    @apply relative whitespace-nowrap py-3.5 pl-3 pr-4 sm:pr-6;
+}
+.table-td {
+    @apply whitespace-nowrap px-2 py-2 text-sm text-gray-900;
+}
+.btn {
+    @apply inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto;
+}
+.btn-back {
+    @apply inline-flex items-center justify-center rounded-md border border-transparent bg-gray-300 px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 sm:w-auto;
+}
+.input {
+    @apply mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500;
+}
